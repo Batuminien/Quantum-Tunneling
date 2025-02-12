@@ -48,10 +48,10 @@ The initial wave function is defined as a **Gaussian wave packet**, given by the
 ![Gaussian Wave Packet](images/gaussian_wave_packet.png)
 
 Where:
-- **\\(A*\\)** is the normalization constant,
-- **\\(x_0\\)** is the initial position of the wave packet,
-- **\\(\\sigma\\)** is the width (spread) of the packet,
-- **\\(k_0\\)** is the initial momentum (wave number).
+- **$A$** is the normalization constant,  
+- **$x_0$** is the initial position of the wave packet,  
+- **$\sigma$** is the width (spread) of the packet,  
+- **$k_0$** is the initial momentum (wave number).
 
 This wave packet represents a localized particle with a certain momentum directed towards the potential barrier.
 
@@ -64,9 +64,9 @@ The evolution of the wave packet is governed by the **time-dependent Schrödinge
 ![Time-Dependent Schrödinger Equation](images/schrodinger_equation.png)
 
 Where:
-- **\\(\\hbar\\)** is the reduced Planck's constant (set to 1 in this simulation),
-- **\\(m\\)** is the mass of the particle (set to 1 for simplicity),
-- **\\(V(x)\\)** is the potential energy function representing the barrier.
+- **$\hbar$** is the reduced Planck's constant (set to 1 in this simulation),  
+- **$m$** is the mass of the particle (set to 1 for simplicity),  
+- **$V(x)$** is the potential energy function representing the barrier.
 
 The numerical solution involves diagonalizing the Hamiltonian and using eigenfunction expansion to compute the time evolution of the wave packet.
 
@@ -79,11 +79,11 @@ The finite potential barrier is defined as:
 ![Potential Barrier](images/potential_barrier.png)
 
 Where:
-- **\\(V_0\\)** is the height of the potential barrier,
-- **\\(a\\)** is the starting position of the barrier,
-- **\\(w\\)** is the width of the barrier.
+- **$V_0$** is the height of the potential barrier,  
+- **$a$** is the starting position of the barrier,  
+- **$w$** is the width of the barrier. 
 
-If the particle's energy is less than **\\(V_0\\)**, classical mechanics predicts total reflection. However, in quantum mechanics, there's a non-zero probability that the particle will tunnel through the barrier.
+If the particle's energy is less than **$V_0$**, classical mechanics predicts total reflection. However, in quantum mechanics, there's a non-zero probability that the particle will tunnel through the barrier.
 
 ---
 
@@ -99,7 +99,7 @@ The probability of finding the particle in different regions is computed by inte
 
 - **Inside the barrier:**
 
- ![Probability Inside the Barrier](images/probabilty_inside.png)
+ ![Probability Inside the Barrier](images/probability_inside.png)
 
 - **Right of the barrier (transmission probability):**
 
