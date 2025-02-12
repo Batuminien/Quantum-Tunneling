@@ -45,9 +45,7 @@ The script will generate wavefunction evolution plots that show the tunneling be
 
 The initial wave function is defined as a **Gaussian wave packet**, given by the equation:
 
-```math
-\\Psi(x, 0) = A \\cdot e^{ -\\frac{(x - x_0)^2}{2\\sigma^2} } \\cdot e^{i k_0 x}
-```
+![Gaussian Wave Packet](images/gaussian_wave_packet.png)
 
 Where:
 - **\\(A*\\)** is the normalization constant,
@@ -63,9 +61,7 @@ This wave packet represents a localized particle with a certain momentum directe
 
 The evolution of the wave packet is governed by the **time-dependent Schrödinger equation**:
 
-```math
- i \\hbar \\frac{\\partial \\Psi(x, t)}{\\partial t} = -\\frac{\hbar^2}{2m} \\frac{\\partial^2 \\Psi(x, t)}{\\partial x^2} + V(x) \\Psi(x, t)
-```
+![Time-Dependent Schrödinger Equation](images/schrodinger_equation.png)
 
 Where:
 - **\\(\\hbar\\)** is the reduced Planck's constant (set to 1 in this simulation),
@@ -80,13 +76,7 @@ The numerical solution involves diagonalizing the Hamiltonian and using eigenfun
 
 The finite potential barrier is defined as:
 
-```math
-V(x) = 
-\\begin{cases} 
-V_0, & \\text{if } a < x < a + w \\\\
-0, & \\text{otherwise}
-\\end{cases}
-```
+![Potential Barrier](images/potential_barrier.png)
 
 Where:
 - **\\(V_0\\)** is the height of the potential barrier,
@@ -101,27 +91,19 @@ If the particle's energy is less than **\\(V_0\\)**, classical mechanics predict
 
 The probability of finding the particle in different regions is computed by integrating the squared modulus of the wave function:
 
-```math
-P = \\int |\\Psi(x, t)|^2 dx
-```
+![Tunneling Probability](images/tunneling_probability.png)
 
 - **Left of the barrier (reflection probability):**
 
-  ```math
-  P_{\\text{left}} = \\int_{0}^{a} |\\Psi(x, t)|^2 dx
-  ```
+ ![Left Reflection Probability](images/left_reflection_probability.png)
 
 - **Inside the barrier:**
 
-  ```math
-  P_{\\text{barrier}} = \\int_{a}^{a + w} |\\Psi(x, t)|^2 dx
-  ```
+ ![Probability Inside the Barrier](images/probabilty_inside.png)
 
 - **Right of the barrier (transmission probability):**
 
-  ```math
-  P_{\\text{right}} = \\int_{a + w}^{L} |\\Psi(x, t)|^2 dx
-  ```
+  ![Transmission Probability](images/transmission_probability.png)
 
 These probabilities evolve over time, illustrating the quantum tunneling effect.
 
